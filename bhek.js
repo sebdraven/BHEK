@@ -12,12 +12,11 @@ function getLinks() {
 
 
 casper.start();
-
-casper.open('https://www.google.com/search?q=inurl:%27bhadmin.php%27&hl=fr&safe=off&client=firefox-a&start='+padding+'&rls=org.mozilla:fr:official&biw=1366&bih=656&prmd=imvns&filter=0')
+casper.userAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X)');
+casper.open('https://www.google.fr/search?q=inurl:%27bhadmin.php%27&hl=fr&safe=off&client=firefox-a&start='+padding+'&rls=org.mozilla:fr:official&biw=1366&bih=656&prmd=imvns&filter=0')
 casper.then(function() {
     // aggregate results for the 'casperjs' search
     links = this.evaluate(getLinks);
-	
     // now search for 'phantomjs' by filling the form again
 });
 

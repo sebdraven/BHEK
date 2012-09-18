@@ -2,7 +2,7 @@
 Created on Sep 18, 2012
 
 @author: slarinier
-use python bhek.py --scriptjs ../../../projet/BHEK/bhek.js --domains_file ../../../projet/BHEK/domaine_list_txt --url_file ../../../projet/BHEK/list_panel.txt --padding 0
+use python bhek.py --scriptjs bhek.js --domains_filedomaine_list_txt --url_file list_panel.txt --padding 0
 '''
 import argparse
 import re
